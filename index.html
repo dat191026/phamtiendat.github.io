@@ -10,6 +10,16 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* Style for proficiency circles */
+        .proficiency-circle {
+            width: 16px; /* Size of the circle */
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #3b82f6; /* Blue border */
+        }
+        .proficiency-circle.filled {
+            background-color: #3b82f6; /* Filled blue */
+        }
     </style>
 </head>
 <body class="font-inter antialiased bg-gray-100 p-4 sm:p-8 md:p-12 lg:p-16 min-h-screen">
@@ -17,7 +27,7 @@
         <div class="w-full md:w-1/3 bg-gradient-to-br from-blue-300 to-blue-500 text-gray-800 p-6 sm:p-8 flex flex-col items-center text-center">
             <div class="mb-6">
                 <div class="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden border-4 border-white shadow-md">
-                    <img src="data:image/jpeg;base64,{{uploaded: Screenshot 2025-05-28 203013.png}}"
+                    <img src="data:image/jpeg;base64,{{uploaded:Screenshot 2025-05-28 203013.jpg-411d80ee-4358-48b0-bcff-c59880c813ae}}"
                          alt="Profile Picture of Nguyen Thanh Kien"
                          class="w-full h-full object-cover">
                 </div>
@@ -83,7 +93,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-blue-700"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                     <div>
                         <p class="text-sm text-gray-600">Adresse</p>
-                        <p class="font-medium text-gray-800">Nam Can, Ca Mau, Viet Nam</p>
+                        <p class="font-medium text-gray-800">Nam Can, Ca Mau, Vietnam</p>
                     </div>
                 </div>
             </div>
@@ -96,40 +106,57 @@
                     Ausbildung
                 </h2>
                 <div class="mb-4">
-                    <h3 class="text-lg font-semibold text-gray-900">WARDIERE UNIVERSITY</h3>
-                    <p class="text-blue-700 font-medium">Bachelor of Design</p>
-                    <p class="text-sm text-gray-600">2011 - 2015 | GPA: 3.85</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Tieu Hoc 1 Grundschule</h3>
+                    <p class="text-blue-700 font-medium">Ca Mau, Vietnam</p>
+                    <p class="text-sm text-gray-600">2012 - 2017</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Phan Ngoc Hien Sekundarschule</h3>
+                    <p class="text-blue-700 font-medium">Ca Mau, Vietnam</p>
+                    <p class="text-sm text-gray-600">2017 - 2021</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold text-gray-900">Phan Ngoc Hien Oberschule</h3>
+                    <p class="text-blue-700 font-medium">Ca Mau, Vietnam</p>
+                    <p class="text-sm text-gray-600">2021</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-900">WARDIERE UNIVERSITY</h3>
-                    <p class="text-blue-700 font-medium">Master of Design</p>
-                    <p class="text-sm text-gray-600">2014 - 2019 | GPA: 3.74</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Deutschkurs an der Tong Vu Phuong</h3>
+                    <p class="text-blue-700 font-medium">Ben Tre, Vietnam</p>
+                    <p class="text-sm text-gray-600">2024 - 2025</p>
                 </div>
             </section>
 
             <section class="mb-8">
                 <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-700"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    Berufserfahrung
+                    Erfahrung
                 </h2>
-                <div class="mb-4">
-                    <h3 class="text-lg font-semibold text-gray-900">Senior Grafikdesigner</h3>
-                    <p class="text-blue-700 font-medium">Firma X (Beispiel)</p>
-                    <p class="text-sm text-gray-600">2020 - 2023</p>
-                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                        <li>Erstellung von über 100 Grafikdesigns für große Unternehmen.</li>
-                        <li>Erfolgreiche Bearbeitung vieler komplexer Aufgaben.</li>
-                    </ul>
+                <div class="text-gray-700">
+                    <p class="mb-2">Ich habe noch keine Berufserfahrung, weil ich mich nach dem Schulabschluss voll auf den Deutschkurs konzentriert habe.</p>
+                    <p>Aber ich bin sehr motiviert, Neues zu lernen und praktische Erfahrungen zu sammeln.</p>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-900">Grafikdesigner</h3>
-                    <p class="text-blue-700 font-medium">Jauna Me</p>
-                    <p class="text-sm text-gray-600">2017 - 2019</p>
-                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                        <li>Erstellung von über 100 Grafikdesigns für große Unternehmen.</li>
-                        <li>Erfolgreiche Bearbeitung vieler komplexer Aufgaben.</li>
-                    </ul>
-                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-700"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Hobbys
+                </h2>
+                <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <li class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        Fußball spielen
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700"><path d="M9 18V5l12-2v13"/><path d="M3 17v5h12V17z"/><path d="M18 17a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+                        Musik hören
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700"><path d="M17.8 19.2 16 11l3.5-3.5A2.1 2.1 0 0 0 17.5 4c-.97 0-1.76.58-1.76 1.3S15.8 7 17.5 7H14L5 16.5 7.5 19 17.8 19.2Z"/><path d="m2.3 10.2 7.2-7.2"/></svg>
+                        Reisen
+                    </li>
+                </ul>
             </section>
 
             <section class="mb-8">
@@ -138,11 +165,10 @@
                     Fähigkeiten
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700">
-                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Webdesign</p>
-                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Branding</p>
-                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Grafikdesign</p>
-                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> SEO</p>
-                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Marketing</p>
+                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Teamarbeit</p>
+                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Zuverlässigkeit</p>
+                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Pünktlichkeit</p>
+                    <p class="flex items-center gap-2"><span class="text-blue-700">•</span> Schnelle Lernfähigkeit</p>
                 </div>
             </section>
 
@@ -152,8 +178,28 @@
                     Sprachkenntnisse
                 </h2>
                 <div class="text-gray-700">
-                    <p class="mb-1">Muttersprache: <span class="font-medium">Vietnamesisch</span></p>
-                    <p>Fremdsprache: <span class="font-medium">Deutsch B1 Zertifikat</span></p>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="font-medium">Vietnamesisch</span>
+                        <div class="flex gap-1 ml-2">
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                        </div>
+                        <span class="text-sm text-gray-500">(Muttersprache)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-medium">Deutsch</span>
+                        <div class="flex gap-1 ml-2">
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle filled"></div>
+                            <div class="proficiency-circle"></div>
+                            <div class="proficiency-circle"></div>
+                        </div>
+                        <span class="text-sm text-gray-500">(B1 Zertifikat)</span>
+                    </div>
                 </div>
             </section>
         </div>
